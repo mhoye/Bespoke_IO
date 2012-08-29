@@ -8,20 +8,9 @@ enterprise management tools.
 
 It is available from: 
 
-  http://github.com/mhoye/Bespoke_IO 
+  http://github.com/mhoye/Bespoke_IO
 
-
-The easiest way to try it out is to spin up the included VM in VirtualBox.
-It is located in /BeSDS/VM/ and runs the service on port 80. Since the
-default passwords for this service are included in that folder in 
-
-  /Bespoke_IO/VM/login-info.txt
-
-You are _strongly discouraged_ from deploying this VM in an internet-facing
-capacity without changing the OS' root, databases' root and web services' admin
-passwords, as well as doing your own due-diligence security audit. Mike Hoye 
-and Bespoke I/O take no responsibility for any of the (inevitable, horrible)
-consequences of your doing so.  
+under the Mozilla Public License. 
 
 
 ## Overview
@@ -40,7 +29,7 @@ Generally speaking:
 
 * Prerequisites are:
     * MySQL 5.0+
-    * PHP 5.3+, with at least the following modules:
+    * PHP 5.3, with at least the following modules
         * curl, gd, mcrypt, mysql, mysqli
     * WiX 3.0 or better
     * A recent Wine
@@ -101,9 +90,9 @@ Specifically, installation on a Fedora box goes as follows:
                   p7* / 
                   wine
 
-    Note that BeSDS currently requires on PHP 5.3 or earlier. A small amount
-    of code relies on a deprecated behavior that has been dropped in 5.4. This
-    will be fixed shortly.
+    Note that BeSDS currently requires on PHP 5.3. A small amount of code relies 
+    on a deprecated behavior that has been dropped in 5.4. This will be fixed 
+    shortly.
 
 4.  Install the editor of your choice, emacs, vim or nano.
 
@@ -156,8 +145,7 @@ Specifically, installation on a Fedora box goes as follows:
     can log in and change this at your earliest convenience.
 
 At this point, you should be able to log into BeSDS as a web service, using
-the username "admin" and the passwords step 10 provided. 
-
+the username "admin" and the password provided in step 10.
 
 
 On a personal note, I'd like to thank Mozilla and Seneca/CDOT for the 
