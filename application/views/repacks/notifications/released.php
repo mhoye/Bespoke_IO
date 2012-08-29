@@ -1,4 +1,4 @@
-From: service@bespokeio.com
+From: service@somecompany
 Subject: [Bespoke I/O] Release failed for <?=$repack->display_title . "\n"?>
 
 Greetings,
@@ -10,8 +10,8 @@ has been built, and is now ready for download. <?php /* You can
 review the distribution rules for this browser, which can be found here [link 
 to distro rules] as well as the release history <?=$repack->releaseUrl()?>. */ ?>
 
-If you have any questions or feedback, please direct them to the Bespoke I/O contact
-page at https://besds.bespokeio.com/contact/.
+If you have any questions or feedback, please direct them to the Bespoke I/O 
+homepage at https://bespokeio.com/.
  
 Status information and the release history of this browser can be found at:
 

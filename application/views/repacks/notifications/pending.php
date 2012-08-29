@@ -1,4 +1,4 @@
-From: service@bespokeio.com
+From: service@somecompany
 Subject: [Bespoke I/O] Release failed for <?=$repack->display_title . "\n"?>
 
 Greetings,

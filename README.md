@@ -10,7 +10,10 @@ It is available from:
 
   http://github.com/mhoye/Bespoke_IO
 
-under the Mozilla Public License. 
+under the Mozilla Public License.
+
+There's some work to be done on cleaning up the text in the app that's 
+ongoing, but the application will generate customized .MSIs as described. 
 
 
 ## Overview

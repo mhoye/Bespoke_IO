@@ -1,15 +1,15 @@
-From: byob-notify-noreply@mozilla.com
-Subject: [BYOB] Release requested for <?=$repack->display_title . "\n"?>
+From: service@somecompany
+Subject: [BeSDS] Release requested for <?=$repack->display_title . "\n"?>
 
 Greetings,
 
-This is an automatically generated email from Mozilla's Build Your Own Browser 
-(BYOB) application. The requested for release of the "<?=$repack->display_title?>"
+This is an automatically generated email from Bespoke I/O's BeSDS
+application. The requested for release of the "<?=$repack->display_title?>"
 browser has been successfully submitted for review!
 
-We’ll notify you shortly when your BYOB is ready for download (usually in about 
+We’ll notify you shortly when your browser is ready for download (usually in about 
 two business days, depending on the current volume of requests). In the 
-meantime, if you have any questions, please direct them to the BYOB contact 
+meantime, if you have any questions, please direct them to the contact 
 page at <?=$contact_URL?>.
 
 <?php if (!empty($comments)): ?>
@@ -20,5 +20,4 @@ Your Comments:
 
 Sincerely,
 
-The Mozilla BYOB Team
-http://buildyourownbrowser.com
+The Bespoke I/O Team

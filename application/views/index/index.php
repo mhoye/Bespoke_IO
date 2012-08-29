@@ -11,12 +11,12 @@
 
 <div class="page_intro clearfix">
 	<div class="blurb">
-        <h3><?=_('Welcome to Bespoke I/O\'s Browser Deployment Service.')?></h3>
+        <h3><?=_('Welcome to Bespoke I/O\'s Browser Deployment Server.')?></h3>
         <p>
             <?=_('We\'re pleased to offer our clients a secure, modern web browser<br> for internal deployment in the enterprise environment.')?>
         </p>
         <p>            
-	<?=_('If you\'d like to try BeSDS, have questions about pricing, or would like <br>any other information, contact us at <a href="mailto:info@bespokeio.com">info@bespokeio.com</a>  ')?>
+	<?=_('If you\'d like to try BeSDS, or would like <br>any other information, contact us at <a href="mailto:info@bespokeio.com">info@bespokeio.com</a>  ')?>
         </p>
 
 <br/>
