@@ -1,0 +1,361 @@
+/**
+* Styles for home page.
+ */
+.ctrl_index_act_index #content .page_intro
+{
+}
+.ctrl_index_act_index #content .page_intro .blurb
+{
+	margin: 20px;
+	text-align: center;
+}
+.ctrl_index_act_index #content .page_intro .blurb H3
+{
+	color: #395273;
+	font-size: 27px;
+}
+.ctrl_index_act_index #content .page_intro .blurb P
+{
+	font-size: 1.4em;
+	color: #888;
+	margin: 24px;
+}
+.ctrl_index_act_index #content .page_intro .blurb P EM
+{
+	color: #444;
+	font-style: normal;
+}
+.ctrl_index_act_index #content .page_intro .blurb .create_browser
+{
+	margin: 5px;
+	padding: 1em;
+	/*[disabled]width:352px;*/
+	text-align: center;
+}
+.ctrl_index_act_index #content .page_intro .blurb .create_browser .first_line
+{
+	font-weight: normal;
+	font-size: 1.25em;
+}
+.ctrl_index_act_index #content .page_intro .blurb .create_browser .first_line STRONG
+{
+	font-weight: bold;
+}
+.ctrl_index_act_index #content .page_intro .blurb .create_browser .second_line
+{
+	display: block;
+	font-weight: normal;
+	margin-top: 0.5em;
+}
+.ctrl_index_act_index #content .page_intro .blurb .faq
+{
+	font-size: 1em;
+}
+.ctrl_index_act_index #content .page_intro .blurb .faq A
+{
+	display: block;
+}
+.ctrl_index_act_index #content .page_intro .video
+{
+	float: right;
+	margin: 10px 10px 0 0;
+	border: 6px solid #666;
+	background: #FFF;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.ctrl_index_act_index #content .benefits .your_benefits
+{
+	float: left;
+	margin: 40px 0 0 20px;
+	width: 580px;
+	border: 1px solid #EEE;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+.ctrl_index_act_index #content .benefits .your_benefits H3
+{
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	line-height: 50px;
+	font-size: 18px;
+	margin: 0;
+	padding: 0 15px;
+	border-bottom: 1px solid #EEE;
+	background: -moz-linear-gradient(-90deg, #ffffff, #e0eef2 100%) no-repeat;
+	background: -webkit-gradient(linear,left top, left bottom, from(#ffffff), to(#e0eef2)) no-repeat;
+	color: #555;
+}
+.ctrl_index_act_index #content .benefits .your_benefits UL
+{
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+}
+.ctrl_index_act_index #content .benefits .your_benefits UL LI
+{
+	height: 90px;
+	padding: 0 15px;
+	margin: 0;
+	border-bottom: 1px solid #EEE;
+	color: #666;
+/* 
+padding: 0 15px 0 95px;
+background: #fff url(../img/placeholder-thumb.png) no-repeat 20px 20px;
+*/
+}
+.ctrl_index_act_index #content .benefits .your_benefits UL LI:last-child
+{
+	border: none;
+}
+.ctrl_index_act_index #content .benefits .your_benefits UL LI H4
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	padding: 1em 0 0;
+	color: #444;
+}
+.ctrl_index_act_index #content .benefits .your_benefits UL LI P
+{
+	line-height: 1.5em;
+}
+.ctrl_index_act_index #content .benefits .who_benefits
+{
+	float: right;
+	margin: 40px 10px 0 0px;
+	width: 285px;
+	border: 1px solid #EEE;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	background: #FFF;
+}
+.ctrl_index_act_index #content .benefits .who_benefits H3
+{
+	color: #555;
+	line-height: 30px;
+	padding: 10px 10px 0 15px;
+	margin: 0;
+}
+.ctrl_index_act_index #content .benefits .who_benefits UL
+{
+	padding: 10px 15px 0;
+}
+.ctrl_index_act_index #content .benefits .who_benefits UL LI
+{
+	color: #666;
+	padding: 0 0 15px;
+	margin: 0;
+	font-size: 0.95em;
+	position: relative;
+}
+.ctrl_index_act_index #content .benefits .who_benefits UL LI IMG
+{
+	float: right;
+	margin: 0 0 0.5em 1em;
+}
+.ctrl_index_act_index #content .benefits .who_benefits UL LI H4
+{
+	display: inline;
+	font-weight: bold;
+	color: #444;
+}
+.ctrl_index_act_index #content .benefits .who_benefits UL LI P
+{
+	display: inline;
+}
+.ctrl_index_act_index #content .showcase .whos_using
+{
+	float: right;
+	margin: 40px 10px 0 0px;
+	width: 285px;
+	border: 1px solid #EEE;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	background: #FFF;
+}
+.ctrl_index_act_index #content .showcase .whos_using H3
+{
+	color: #555;
+	line-height: 30px;
+	padding: 10px 10px 0 15px;
+	margin: 0;
+}
+.ctrl_index_act_index #content .showcase .whos_using UL
+{
+}
+.ctrl_index_act_index #content .showcase .whos_using UL.whos_who
+{
+	position: relative;
+	height: 140px;
+}
+.ctrl_index_act_index #content .showcase .whos_using UL.whos_who LI
+{
+	color: #666;
+	padding: 0 1em 0px;
+	margin: 0;
+	font-size: 0.95em;
+	position: absolute;
+	display: none;
+}
+.ctrl_index_act_index #content .showcase .whos_using UL.whos_who LI.selected
+{
+	display: block;
+}
+.ctrl_index_act_index #content .showcase .whos_using UL.whos_who LI P
+{
+	margin: 1em 0;
+}
+.ctrl_index_act_index #content .showcase .whos_using UL.whos_who LI P A
+{
+	font-weight: bold;
+}
+.ctrl_index_act_index #content .showcase .whos_using UL.whos_who LI IMG
+{
+	float: right;
+	margin: 0 0 0.5em 1em;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination
+{
+	margin: 1em 0;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL
+{
+	text-align: center;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI
+{
+	display: inline;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI A
+{
+	padding: 0 0.15em;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI A:hover
+{
+	text-decoration: none;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI A.prev, .ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI A.next
+{
+	padding: 0 0.5em;
+	font-size: 0.8em;
+	color: #999;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI A.page
+{
+	font-size: 1.25em;
+	color: #CCC;
+}
+.ctrl_index_act_index #content .showcase .whos_using DIV.pagination UL LI A.selected
+{
+	color: #999;
+}
+.ctrl_index_act_index #content .showcase .your_showcase
+{
+}
+.ctrl_index_act_index #content .showcase .your_showcase H3
+{
+}
+.ctrl_index_act_index #content .showcase
+{
+}
+.ctrl_index_act_index #content .showcase .recent_browsers
+{
+	float: left;
+	margin: 40px 0 0 20px;
+	padding: 0;
+	width: 580px;
+	border: 1px solid #EEE;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+.ctrl_index_act_index #content .showcase .recent_browsers H3
+{
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	line-height: 50px;
+	font-size: 18px;
+	margin: 0;
+	padding: 0 15px;
+	border-bottom: 1px solid #EEE;
+	background: -moz-linear-gradient(-90deg, #ffffff, #e0eef2 100%) no-repeat;
+	background: -webkit-gradient(linear,left top, left bottom, from(#ffffff), to(#e0eef2)) no-repeat;
+	color: #555;
+}
+.ctrl_index_act_index #content .showcase .recent_browsers UL
+{
+	padding: 0;
+	margin: 0;
+}
+.ctrl_index_act_index #content .showcase .recent_browsers UL LI
+{
+	float: left;
+	width: 289px;
+	height: 60px;
+	font-size: 0.85em;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #EEE;
+	background: transparent url(../img/browser-globe.png) no-repeat 9px 10px;
+}
+.ctrl_index_act_index #content .showcase .recent_browsers UL LI H4
+{
+	margin: 16px 10px 0px 50px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.05em;
+}
+.ctrl_index_act_index #content .showcase .recent_browsers UL LI P.meta
+{
+	margin: 0px 10px 10px 50px;
+	padding: 0;
+}
+.ctrl_index_act_index #content .action_call_footer
+{
+	background: #F0F6FB;
+	margin: 40px 0 50px 20px;
+	width: 580px;
+	border: 1px solid #EEE;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	text-align: center;
+}
+.ctrl_index_act_index #content .action_call_footer H3
+{
+	padding: 1em 0 0.25em;
+	color: #666;
+	font-weight: normal;
+}
+.ctrl_index_act_index #content .action_call_footer .create_browser
+{
+	display: block;
+	margin: 5px auto 1em;
+	padding: 1em 0.5em;
+	width: 250px;
+	text-align: center;
+}
+.ctrl_index_act_index #content .action_call_footer .create_browser .first_line
+{
+	font-weight: normal;
+	font-size: 1.25em;
+}
+.ctrl_index_act_index #content .action_call_footer .create_browser .first_line STRONG
+{
+	font-weight: bold;
+}
+.ctrl_index_act_index #content .action_call_footer .create_browser .second_line
+{
+	display: block;
+	font-weight: normal;
+	margin-top: 0.5em;
+}

@@ -1,0 +1,37 @@
+DIV
+{
+    position:relative;
+}
+
+#repackingPopup
+{
+    display:none;
+    position:relative;
+    _position:absolute;
+    height: 75px;
+    width:550px;
+    background:#FFFFFF;
+    border:3px solid #cecece;
+    padding: 12px;
+    z-index:2;
+    font-size:20px;
+    font-weight:bold;
+}
+#popupClose
+{
+    line-height:14px;
+    right:6px;
+    top:6px;
+    position:absolute;
+    color:#005788;
+    display:block;
+    cursor:pointer;
+}
+p.popup
+{
+    text-align:center; 
+}
+#message
+{
+    vertical-align:middle;
+}

@@ -1,0 +1,105 @@
+/**
+ * Styles for repack detail page.
+ */
+.ctrl_thunderbird_repacks_act_view table tbody tr.even td {
+    background: #f7f7f5;
+}
+.ctrl_thunderbird_repacks_act_view table tbody tr.odd td {
+    background: #ffffff;
+}
+
+.ctrl_thunderbird_repacks_act_view #content {
+}
+
+.ctrl_thunderbird_repacks_act_view #changes {
+}
+.ctrl_thunderbird_repacks_act_view table.changes {
+    table-layout: fixed;
+    margin: 0.5em 0 1.5em 0;
+}
+.ctrl_thunderbird_repacks_act_view table.changes thead tr {
+}
+.ctrl_thunderbird_repacks_act_view table.changes thead tr th {
+    text-align: left;
+    padding: 0.125em 0.5em;
+}
+.ctrl_thunderbird_repacks_act_view table.changes tbody tr {
+}
+.ctrl_thunderbird_repacks_act_view table.changes tbody tr td {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    word-wrap: break-word;
+}
+.ctrl_thunderbird_repacks_act_view table.changes tbody tr td.name {
+    padding-left: 1.5em;
+}
+
+.ctrl_thunderbird_repacks_act_view table.downloads {
+    width: 100%;
+    margin: 0 0 1.75em 0;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads thead tr {
+}
+.ctrl_thunderbird_repacks_act_view table.downloads thead tr th {
+    text-align: left;
+    padding: 0.5em 0.5em;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads thead tr th.empty {
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr {
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td {
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td.locale {
+    padding-left: 2em;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td.version {
+    padding-left: 1em;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td a {
+    display: block;
+    padding: 0.25em 0.25em;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td.os a {
+    padding: 0 0 0 22px;
+    line-height: 20px;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td.win32 a {
+    background: transparent url(../img/ico-win.png) no-repeat 0 0;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td.mac a {
+    background: transparent url(../img/ico-osx-uni.png) no-repeat 0 0;
+}
+.ctrl_thunderbird_repacks_act_view table.downloads tbody tr td.linux a {
+    background: transparent url(../img/ico-tux.png) no-repeat 0 0;
+}
+
+.ctrl_thunderbird_repacks_act_view #history ul {
+    list-style: none;
+    padding: 0 0 2em 0;
+    margin: 0 0 0 0;
+    border-top: 1px solid #ddd;
+}
+.ctrl_thunderbird_repacks_act_view #history ul li.event {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 0 0.5em 1em;
+    margin: 0 0 0 0;
+}
+.ctrl_thunderbird_repacks_act_view #history ul li.event .when {
+    font-weight: bold;
+    float: left;
+    width: 11ex;
+    text-align: right;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;    
+}
+.ctrl_thunderbird_repacks_act_view #history ul li.event .summary {
+    padding: 0 0 0 0;
+    margin: 0 0 0 13ex;    
+}
+.ctrl_thunderbird_repacks_act_view #history ul li.event .comments {
+    padding: 0 0 0 0;
+    margin: 0 0 0 13ex;    
+    color: #888;
+}
+

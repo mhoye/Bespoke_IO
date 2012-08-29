@@ -1,0 +1,120 @@
+#ctrl_repacks_act_edit .editor .pane  .upload iframe {
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin: 0; padding: 0;
+    background: transparent;
+}
+.repack_upload_iframe {
+    margin: 0;
+    background: #fff;
+    min-width: 0;
+    width: 80%;
+} 
+.repack_upload_iframe ul.errors {
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0.5em;
+    width: 400px;
+    border: 1px dotted #f00;
+    background-color: #fee;
+}
+.repack_upload_iframe ul.errors .error {
+    list-style: disc;
+    margin: 0.5em 0.25em 0.5em 2em;
+    color: #f33;
+}
+.repack_upload_iframe #wrap {
+    min-width: 0;
+}
+.repack_upload_iframe #main {
+    margin: 0;
+    width: auto;
+}
+.repack_upload_iframe #content {
+}
+
+fieldset.selection_title {
+    margin-top: 1em;
+    font-weight:bold;
+}
+.repack_upload_iframe .selections {
+    font-weight:normal;
+}
+.repack_upload_iframe #content .upload_form {
+    border-bottom: 1px dotted #666;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.repack_upload_iframe #content form {
+}
+.repack_upload_iframe #content form fieldset {
+}
+.repack_upload_iframe #content form fieldset legend {
+    font-size:100%;
+    font-weight:bold;
+    margin:0;
+}
+.pretty_upload {
+    position: relative;
+    float: left;
+}
+.pretty_upload .fake_upload {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.repack_upload_iframe input.upload {
+}
+.repack_upload_iframe .pretty_upload .fake_upload .text {
+    width: 240px;
+}
+
+.pretty_upload .fake_upload button {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.pretty_upload input.hidden {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+.repack_upload_iframe .upload_form .uploads {
+    margin: 1em 0 0 2em;
+}
+.repack_upload_iframe .upload_form .uploads li {
+    list-style: disc;
+    margin: 0.5em 0 0.5em 0;
+}
+.repack_upload_iframe .upload_form .uploads li a {
+    color: #333;
+}
+.repack_upload_iframe .upload_form .uploads li a:hover {
+    text-decoration: none;
+    color: #333;
+}
+.repack_upload_iframe .upload_form .uploads li a:hover .name,
+.repack_upload_iframe .upload_form .uploads li a:hover .version {
+    text-decoration: line-through;
+}
+.repack_upload_iframe form.delete {
+    display: inline;
+}
+.repack_upload_iframe form.delete button.remove {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    color:#004463;
+    font-size: 80%;
+    font-weight: normal;
+    margin: 0 0 0 0.5em;
+    padding: 0;
+    cursor: pointer;
+    visibility: hidden;
+}
+.repack_upload_iframe li a:hover form.delete button.remove {
+    visibility: visible;
+}

@@ -1,0 +1,50 @@
+<?php
+$config['model.enable_delete_all'] = true;
+$config['model.database'] = 'testing';
+
+$config['database.testing'] = array(
+	'benchmark'     => TRUE,
+	'persistent'    => FALSE,
+	'connection'    => array
+	(
+		'type'     => 'mysql',
+		'user'     => 'besds',
+		'pass'     => 'besds',
+		'host'     => 'localhost',
+		'port'     => FALSE,
+		'socket'   => FALSE,
+		'database' => 'besds_test'
+	),
+	'character_set' => 'utf8',
+	'table_prefix'  => '',
+	'object'        => TRUE,
+	'cache'         => FALSE,
+	'escape'        => TRUE
+);
+
+$config['email.driver'] = 'smtp';
+
+$config['email.options'] = array(
+    'hostname'   => 'smtp.example.com',
+    'username'   => 'USER NAME',
+    'password'   => 'PASSWORD',
+    'port'       => '465',
+    'encryption' => 'tls'
+);
+
+$config['repacks.enable_notifications'] = false;
+
+$config['addon_management.collections_username'] =
+    'SOME_USERNAME_HERE';
+$config['addon_management.collections_password'] =
+    'SOME_PASSWORD_HERE';
+
+// Define the names of collections for testing here.
+$config['addon_management.collection_popular_name'] =
+    'BeSDS Popular Extensions (dev)';
+$config['addon_management.collection_searchengines_name'] =
+    'BeSDS Search Engines (dev)';
+$config['addon_management.collection_personas_name'] =
+    'BeSDS Personas (dev)';
+$config['addon_management.collection_themes_name'] =
+    'BeSDS Themes (dev)';

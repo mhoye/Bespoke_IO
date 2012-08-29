@@ -1,0 +1,975 @@
+/**
+* Styles for repack editor page.
+ */
+/*+clearfix {*/
+.tab-set .tab-choice:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+}
+.tab-set .tab-choice
+{
+	display: inline-block;
+}
+.tab-set .tab-choice
+{
+/*\*/
+	display: block;
+/**/
+	-height: 1px;
+}
+/*+}*/
+.tab-set .tab-tabs
+{
+	border-top: 1px solid transparent;
+	border-bottom: 0px solid #000000;
+	position: fixed;
+	width: 116px;
+	z-index: +4;
+}
+.tab-set .tab-tabs LI
+{
+}
+.tab-set .tab-tabs A
+{
+/*color: #808080;
+background: #EDF4F9;
+/*display: inline;
+padding: .75em 1em;*
+border: 1px solid #c0c0c0;
+border-bottom: 1px solid #c0c0c0;
+/*margin-left: .25em;*
+-moz-border-radius: .25em 0 .25em 0;
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);*/
+}
+.tab-set .tab-tabs A LI:first-child
+{
+	margin-left: 0;
+}
+.tab-set .tab-tabs A:hover
+{
+	color: #333 !important;
+}
+.tab-set .tab-tabs A LI.selected
+{
+/*font-weight: bold;*/
+	background: #FFF;
+	color: #333;
+	position: relative;
+	-moz-box-shadow: none;
+}
+.tab-set .tab-tabs A LI.checked 
+{
+	color: #006000;
+}
+.tab-set .tab-tabs A LI.checked:before
+{
+	content: '\02714  ';
+}
+.tab-set .tab-tabs .each-tab
+{
+	width: 100px;
+	padding: 0.5em;
+	margin: 0.25em;
+	color: #808080;
+	background: #FFF;
+	text-align: right;
+/**                 padding: .75em 1em;*/
+	border: 1px solid #C0C0C0;
+	border-right: 0px;
+	border-radius: .5em 0 0 .5em;
+}
+#current
+{
+	border-right: 1px solid #FFF;
+} 
+
+/*[clearfix]*/.tab-set .tab-choice
+{
+	width: 804px;
+	/*+placement:float-right 0px 0px;*/
+	float: right;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.tab-set .tab-content
+{
+	background: #FFF;
+	border: 1px solid #C0C0C0;
+	position: relative;
+	margin-top: 0px;
+	-moz-border-radius: 0.5em;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	min-height: 400px;
+	margin-left: 117px;
+}
+.tab-set .tab-header, .tab-set .intro
+{
+	padding: 1em 1.25em;
+	border-bottom: 1px solid #C0C0C0;
+}
+.tab-set .tab-header, .tab-set .intro P
+{
+	font-size: 100%;
+}
+.tab-set .tab-body, .tab-set .pane
+{
+	padding: 1.5em 1.25em;
+	position: relative;
+/*height: 10em;*/
+}
+.tab-set .tab-footer
+{
+	background: #EDF4F9;
+	border-top: 1px solid #C0C0C0;
+	padding: 0.5em 1em;
+	overflow: auto;
+	-moz-border-radius: 0 0 0.5em 0.5em;
+}
+.tab-set .tab-footer .float-left
+{
+	float: left;
+	margin-right: 10px;
+}
+.tab-set .tab-footer .float-right
+{
+	float: right;
+	margin-left: 10px;
+}
+.editor
+{
+	overflow: visible;
+}
+.editor H2
+{
+	margin: 0 0 0.5em 1em;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.editor .editor-content
+{
+	float: inherit;
+	padding-bottom: 0em;
+}
+.editor .editor-changes
+{
+	float: right;
+	width: 210px;
+	margin-top: 2.5em;
+}
+.editor .editor-commit
+{
+	float: right;
+	clear: right;
+	width: 210px;
+	margin-top: 1em;
+}
+.editor-changes
+{
+	border: 1px solid #C0C0C0;
+	background: #EDF4F9;
+	-moz-border-radius: 0.5em;
+	-moz-box-sizing: border-box;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+#content .editor-changes H3
+{
+	padding: 1em 1em 0;
+	font-size: 100%;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.editor-changes UL
+{
+	padding: 0 1em 1em;
+	margin-left: 1em;
+}
+.editor-changes LI
+{
+	margin: 0.5em 0;
+	color: #006000;
+}
+.editor-changes LI:before
+{
+	content: '\02714';
+	margin-right: 0.5em;
+}
+.editor-changes UL LI.none:before
+{
+	content: '';
+}
+.editor-changes UL LI.none
+{
+	color: #333;
+}
+.editor-changes .errors
+{
+	margin-bottom: 1em;
+}
+.editor-changes .errors LI
+{
+	color: #900;
+	margin-left: 1.25em;
+	text-indent: -1.25em;
+}
+.editor-changes .errors LI:before
+{
+	content: '\02717';
+	font-size: 120%;
+	margin-right: 0.5em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane
+{
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET
+{
+	padding: 0;
+	margin: 0 0 1em;
+	text-align: left;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET.addon-dependent
+{
+	padding: 0;
+	margin: -0.5em 0.5em 1.5em 2.5em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET LEGEND
+{
+	font-weight: bold;
+	font-size: 100%;
+	margin: 0em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET DIV TEXTAREA
+{
+	font-family: georgia;
+	font-size: 1.2em;
+	height: 6em;
+	padding: 0.5em;
+	width: 625px;
+	border: 1px solid #CCC;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET DIV INPUT
+{
+	font-family: georgia;
+	font-size: 1.2em;
+	border: 1px solid #CCC;
+	padding: 0.5em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET DIV INPUT #urlform
+{
+	width: 90%;
+}
+
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET DIV INPUT:focus, .ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET DIV TEXTAREA:focus
+{
+	background: #FFF;
+	-moz-box-shadow: 0 0 3px #004463;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET P
+{
+	padding: 0;
+	margin: 1em 0 0;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL
+{
+	padding: 0.25em 0px 0px;
+	margin: 0px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL LI
+{
+	margin: 0 0 0.5em;
+	text-align: left;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.repack-locale
+{
+	width: 75ex;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.repack-locale LI
+{
+	float: left;
+	width: 36ex;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.choices
+{
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.choices LI
+{
+	float: left;
+	margin-right: 1em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.choices LI INPUT
+{
+	width: auto;
+}
+.ctrl_thunderbird_repacks_act_edit .section_nav A:hover
+{
+	text-decoration: none;
+}
+.ctrl_thunderbird_repacks_act_edit .save_buttons
+{
+	display: none;
+}
+/*Added by Donna*/
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI
+{
+	margin-top: 1em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI.lock
+{
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI INPUT
+{
+	width: auto;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI OL LI
+{
+	margin-right: 200px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI OL LI.goleft
+{
+	margin-left: 125px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI OL LI.noproxyfor INPUT
+{
+	width: 334px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI OL LI SPAN.proxyType INPUT
+{
+	width: 225px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.proxychoices LI OL LI SPAN.proxyInput INPUT
+{
+	width: 75px;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .title
+{
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .lock
+{
+	margin-left: 2em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.lock_pref LI
+{
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .update_choices
+{
+	margin-left: 2em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .update_choices .warn
+{
+	margin-left: 2em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .taller 
+{
+  height: 24pt;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .textbox_taller
+{
+  height: 38pt;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .next_idle
+{
+  padding-left: 2em;
+  height: 20pt;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET .next_idle_textbox
+{
+  padding-left: 3.5em;
+  height: 40pt;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane .divider HR
+{
+	border-bottom: 0.5px solid #000000;
+	color: #C0C0C0;
+}
+/*End added by Donna*/
+.ctrl_thunderbird_repacks_act_edit #save-and-review, .ctrl_thunderbird_repacks_act_edit #save-and-close
+{
+	width: 21ex;
+	margin-bottom: 0.75em;
+}
+.ctrl_thunderbird_repacks_act_edit #wizard .pane FIELDSET UL.repack-addons
+{
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+#content UL.repack-addons LI.addon
+{
+	margin: 0;
+	padding: 1em 0 0;
+}
+#content UL.repack-addons LI.addon INPUT
+{
+	padding: 0.5em;
+}
+#content UL.repack-addons LI.addon .title
+{
+	font-size: 120%;
+	font-weight: bold;
+	padding: 0 0 0 1em;
+}
+#content UL.repack-addons LI.addon .title IMG
+{
+	padding: 0 0.5em 0 0;
+}
+#content UL.repack-addons LI.addon P
+{
+	margin: 0.5em 0 1em 1em;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content P.warning
+{
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 0 0 8px;
+	padding: 8px 8px 8px 100px;
+	background: #F9F2C3 url("../img/actions-warning.gif") no-repeat scroll 28px 10px;
+	border: 1px solid #FCE440;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .folder UL
+{
+	margin: 0 0 0 0.25em;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .folder
+{
+	list-style: none;
+	margin: 0;
+	padding: 4px 0 0.25em 28px;
+	background: transparent url("../img/bookmark-icons/folder.png") no-repeat scroll 4px 1px;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .folder .empty
+{
+	list-style: none;
+	color: #666;
+	font-style: italic;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .bookmark
+{
+	list-style: none;
+	margin: 0;
+	padding: 0px 0 0.5em 22px;
+	background: transparent url(../img/bookmark-icons/item.png) no-repeat top left;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks H4
+{
+	font-size: 100%;
+	padding: 0 0 0.25em;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI SPAN.locale_name
+{
+	font-weight: bold;
+	display: block;
+	padding-bottom: 0.5em;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .bookmark TABLE TR.field TH
+{
+	font-size: 75%;
+	font-weight: normal;
+	text-align: left;
+	padding-right: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	color: #999;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .bookmark TABLE TR.field TD
+{
+	font-size: 80%;
+	font-weight: normal;
+	text-align: left;
+	color: #666;
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .menu
+{
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .toolbar
+{
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .normal
+{
+	background-image: url(../img/bookmark-icons/item.png);
+}
+.ctrl_thunderbird_repacks_act_edit .popup #content .sections LI.bookmarks .livemark
+{
+	background-image: url(../img/livemark-item.png);
+}
+.section-bookmarks .bookmarks-editor
+{
+	border: 1px solid #666;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #FFF;
+}
+.section-bookmarks .bookmarks-editor .locale-selector
+{
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales
+{
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+	border-bottom: 1px solid #333;
+	background-color: #FFF;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI
+{
+	float: left;
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI:first
+{
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI A
+{
+	display: block;
+	padding: 5px 0;
+	margin: 2px 2px 0;
+	width: 8ex;
+	font-size: 1em;
+	text-align: center;
+/*background: #DFE4EC;*/
+	color: #AAA;
+	border-top: 1px solid #DFE4EC;
+	border-left: 1px solid #DFE4EC;
+	border-right: 1px solid #DFE4EC;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI.has_content A
+{
+	background: #DFE4EC;
+	color: #333333;
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI.default A
+{
+	width: 10ex;
+	background: #DFE4EC;
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI A:hover
+{
+	text-decoration: none;
+	background-color: #666;
+	color: #FFF;
+}
+.section-bookmarks .bookmarks-editor .locale-selector UL.locales LI.selected A
+{
+	background-color: #7B86A8;
+	color: #FFFFFF;
+}
+.section-bookmarks .notes LI
+{
+	line-height: 1.75em;
+}
+#content .section-bookmarks .bookmarks-editor UL.folders
+{
+	float: left;
+	width: 28ex;
+	padding: 0.5em 0.5em 0.5em 1em;
+	text-indent: 0;
+	margin: 0;
+	list-style-type: none;
+	background-color: #DFE4EC;
+	border-right: 1px solid #333;
+	min-height: 225px;
+}
+#content .section-bookmarks .nolocales UL.folders
+{
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+}
+.section-bookmarks .bookmarks-editor UL.folders .ui-sortable-placeholder.bookmark
+{
+	display: none;
+}
+.section-bookmarks .bookmarks-editor UL.folders .ui-sortable-placeholder.type-folder
+{
+	display: block;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.folder
+{
+	background: transparent url(../img/bookmark-icons/folder.png) no-repeat 4px 1px;
+	line-height: 18px;
+	margin: 0.125em 0;
+	padding: 0 0 0 24px;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.folder-empty
+{
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.folder-toolbar
+{
+	background-image: url(../img/bookmark-icons/bookmarksToolbar.png);
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.folder-menu
+{
+	background-image: url(../img/bookmark-icons/bookmarksMenu.png);
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.root
+{
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.folder .title
+{
+	display: block;
+	padding: 2px 3ex 2px 2px;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.folder .count-wrapper
+{
+	float: right;
+	padding: 1px 3px 0 0;
+	line-height: 18px;
+	color: #666;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.selected .title
+{
+	background-color: #7B86A8;
+	font-weight: bold;
+	color: #FFF;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.selected .count-wrapper
+{
+	color: #FFF;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.selected LI.folder .title
+{
+	background-color: transparent;
+	color: #000;
+	font-weight: normal;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.selected LI.folder .count-wrapper
+{
+	color: #666;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.even
+{
+	background-color: #EEE;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.hover .title
+{
+	text-decoration: underline;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.hover LI.folder .title
+{
+	border: none;
+	text-decoration: none;
+}
+#content .section-bookmarks .bookmarks-editor UL.folders .root .subfolders
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0.5em;
+}
+.section-bookmarks .bookmarks-editor UL.folders LI.hover .subfolders .title
+{
+}
+#content .section-bookmarks .bookmarks-editor UL.folders LI.has_errors .title
+{
+	color: #F33;
+	font-weight: bold;
+}
+#content .section-bookmarks .bookmarks-editor UL.folders LI.has_errors .subfolders .title
+{
+	color: #000;
+	font-weight: normal;
+}
+#content .section-bookmarks .bookmarks-editor UL.folders .subfolders LI.has_errors .title
+{
+	color: #F33;
+	font-weight: bold;
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks
+{
+	margin-left: 31ex;
+	list-style-type: none;
+	padding: 0.75em 0 0 0em;
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks LI.bookmark
+{
+	margin: 0;
+	padding: 4px 0 4px 36px;
+	background: transparent url(../img/bookmark-icons/item.png) no-repeat 14px 2px;
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks LI.type-bookmark
+{
+	background-image: url(../img/bookmark-icons/item.png);
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks LI.type-livemark
+{
+	background-image: url(../img/bookmark-icons/livemarkItem.png);
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks LI.type-folder
+{
+	background-image: url(../img/bookmark-icons/folder.png);
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks LI.selected
+{
+	background-color: #785CB2;
+	color: #FFF;
+	font-weight: bold;
+}
+#content .section-bookmarks .bookmarks-editor UL.bookmarks LI.has_errors .title
+{
+	color: #F33;
+	font-weight: bold;
+}
+.section-bookmarks .bookmarks-editor TABLE.bookmarks
+{
+	width: 100%;
+	border: 1px solid #333;
+}
+#content .section-bookmarks .bookmarks-editor UL.controls
+{
+	border-top: 1px solid #333;
+	margin: 0;
+	padding: 0;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+}
+.section-bookmarks .bookmarks-editor UL.controls LI
+{
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.section-bookmarks .bookmarks-editor UL.controls LI.new-folder
+{
+	width: 31ex;
+}
+.section-bookmarks .bookmarks-editor UL.controls LI.new-folder A:hover
+{
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+}
+.section-bookmarks .bookmarks-editor UL.controls LI A
+{
+	display: block;
+	padding: 0.5em 1em;
+}
+.section-bookmarks .bookmarks-editor UL.controls LI A:hover
+{
+	text-decoration: none;
+	background-color: #666;
+	color: #FFF;
+}
+.section-bookmarks .bookmarks-editor UL.controls LI.disabled A, .section-bookmarks .bookmarks-editor UL.controls LI.disabled A:hover
+{
+	text-decoration: none;
+	background-color: transparent;
+	color: #999;
+	cursor: default;
+}
+.section-bookmarks #bookmarks_json
+{
+	display: none;
+/*
+display: block;
+width: 90%; height: 40ex;
+*/
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor
+{
+	opacity: 0.9;
+	z-index: 999;
+	border: 1px solid #333;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width: 495px;
+	font-size: 0.85em;
+	display: none;
+	position: absolute;
+	background: #525252;
+	color: #FFF;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields
+{
+	list-style-type: none;
+	margin: 0.75em;
+	padding: 0;
+	text-indent: 0;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI
+{
+	padding: 0.25em 0;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI LABEL
+{
+	float: left;
+	text-align: right;
+	width: 12ex;
+	padding: 5px 7px 0 0;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields INPUT
+{
+	display: none;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields INPUT.locale-en-US
+{
+	display: inline;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI.required LABEL
+{
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI.error LABEL
+{
+	color: #F33;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI.required LABEL:before
+{
+	content: "* ";
+	color: #F33;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI INPUT.text
+{
+	width: 65ex;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .bookmark
+{
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_type INPUT
+{
+	display: inline;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_type LABEL
+{
+	float: none;
+	margin: 0 0.25em;
+	font-size: 1.25em;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 4px 0 4px 22px;
+	background: transparent url(../img/bookmark-icons/item.png) no-repeat 2px 2px;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_type LABEL.type-bookmark
+{
+	background-image: url(../img/bookmark-icons/item.png);
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_type LABEL.type-livemark
+{
+	background-image: url(../img/livemark-item.png);
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor BUTTON.type_bookmark, .ctrl_thunderbird_repacks_act_edit #bookmark_editor BUTTON.type_livemark
+{
+	font-weight: bold;
+	color: #525252;
+	padding: 0.25em 0.5em;
+	cursor: pointer;
+	background: #666;
+	background: -moz-linear-gradient(-90deg, #aaa, #666);
+	color: #DDD;
+	font-size: 1em;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .bookmark BUTTON.type_bookmark, .ctrl_thunderbird_repacks_act_edit #bookmark_editor .livemark BUTTON.type_livemark
+{
+	font-weight: bold;
+	background: #CCC;
+	background: -moz-linear-gradient(-90deg, #fff, #ccc);
+	color: #333;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .bookmark .field_feedlink, .ctrl_thunderbird_repacks_act_edit #bookmark_editor .bookmark .field_sitelink
+{
+	display: none;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .livemark
+{
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .bookmark
+{
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .livemark .field_description, .ctrl_thunderbird_repacks_act_edit #bookmark_editor .livemark .field_link
+{
+	display: none;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI.controls
+{
+	float: right;
+	padding: 0em 1.5em 1em 0.5em;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields LI.controls BUTTON
+{
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_locale
+{
+	margin-top: 5px;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_locale .locale_buttons
+{
+	border-bottom: 1px solid #CCC;
+	margin: 0 -0.75em 0.75em;
+	padding: 0 0.75em;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor UL.editor_fields .field_locale .locale_buttons BUTTON.error
+{
+	color: #FFEEEE;
+	background: #FF3333;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .field_locale BUTTON.locale
+{
+	border: 1px solid #CCC;
+	cursor: pointer;
+	-webkit-border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-right-radius: 7px;
+	padding: 0;
+	margin: 0 0px -1px;
+	width: 7.25ex;
+	background: #CCC;
+	color: #333;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .field_locale BUTTON.locale-default
+{
+	width: 9.25ex;
+}
+.ctrl_thunderbird_repacks_act_edit #bookmark_editor .field_locale BUTTON.selected
+{
+	background: transparent;
+	color: #FFF;
+	border-bottom: 1px solid #525252;
+}
+.ctrl_thunderbird_repacks_act_edit .instructions
+{
+	padding: 1em;
+}
+.ctrl_thunderbird_repacks_act_edit .instructions H3
+{
+	font-size: 125%;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+.ctrl_thunderbird_repacks_act_edit .instructions UL.notes
+{
+	padding-left: 2em;
+}
+.ctrl_thunderbird_repacks_act_edit .instructions UL.notes LI
+{
+	list-style: disc;
+}

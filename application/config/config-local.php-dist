@@ -1,0 +1,103 @@
+<?php
+$config['core.needs_installation'] = false;
+$config['core.site_domain'] = http://CHANGEME 
+    (!empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '') . '/';
+$config['core.log_threshold'] = 0;
+$config['core.internal_cache'] = FALSE; // FIXME: Current ACL perms break this.
+$config['core.display_errors'] = FALSE;
+
+$config['core.contact_URL'] = 'http://bespokeio.com/';
+
+$config['model.database'] = 'local';
+
+$config['database.local'] = array(
+    'read_shadow'   => 'shadow',
+	'benchmark'     => FALSE,
+	'persistent'    => FALSE,
+	'connection'    => array
+	(
+		'type'     => 'mysql',
+		'user'     => 'besds_admin',
+		'pass'     => 'besds_admin_password',
+		'host'     => 'localhost',
+		'port'     => FALSE,
+		'socket'   => FALSE,
+		'database' => 'besds'
+	),
+	'character_set' => 'utf8',
+	'table_prefix'  => '',
+	'object'        => TRUE,
+	'cache'         => FALSE,
+	'escape'        => TRUE
+);
+$config['database.shadow'] = array(
+    'benchmark'     => TRUE,
+    'persistent'    => FALSE,
+    'connection'    => array
+    (
+        'type'     => 'mysql',
+        'user'     => 'besds_admin',
+        'pass'     => 'besds_admin_password',
+		'host'     => '127.0.0.1',
+        'port'     => FALSE,
+        'socket'   => FALSE,
+        'database' => 'besds'
+    ),
+    'character_set' => 'utf8',
+    'table_prefix'  => '',
+    'object'        => TRUE,
+    'cache'         => TRUE,
+    'escape'        => TRUE
+);
+
+$config['email.driver'] = 'smtp';
+
+$config['email.options'] = array(
+    'hostname'   => 'smtp.example.com',
+    'username'   => 'USER NAME',
+    'password'   => 'PASSWORD',
+    'port'       => '465',
+    'encryption' => 'tls'
+);
+
+# A comma separated list of job servers in the format host:port. 
+# If no port is specified, it defaults to 4730. 
+$config['gearman_events.servers'] = '127.0.0.1:4730';
+$config['gearman_events.deferred_events'] = TRUE;
+
+$config['recaptcha.domain_name'] = 'localhost';
+$config['recaptcha.public_key']  = 'foo';
+$config['recaptcha.private_key'] = 'foo';
+
+$config['addon_management.popular_extension_ids'] = array(
+    '13661',
+    '9924',
+    '3863',
+    '2108',
+    '271',
+    '590',
+    '748',
+    '684',
+    '60',
+    '1843',
+    '2464',
+);
+
+// See: https://addons.mozilla.org/en-US/firefox/personas/
+$config['addon_management.popular_personas_urls'] = array(
+    'https://addons.mozilla.org/en-US/firefox/persona/18781',
+    'https://addons.mozilla.org/en-US/firefox/persona/29974',
+    'https://addons.mozilla.org/en-US/firefox/persona/111435',
+    'https://addons.mozilla.org/en-US/firefox/persona/31997',
+    'https://addons.mozilla.org/en-US/firefox/persona/36483',
+    'https://addons.mozilla.org/en-US/firefox/persona/46852',
+    'https://addons.mozilla.org/en-US/firefox/persona/22518',
+    'https://addons.mozilla.org/en-US/firefox/persona/172009',
+    'https://addons.mozilla.org/en-US/firefox/persona/166354',
+    'https://addons.mozilla.org/en-US/firefox/persona/140992',
+    'https://addons.mozilla.org/en-US/firefox/persona/171341',
+    'https://addons.mozilla.org/en-US/firefox/persona/172810',
+);
+
+$config['addon_management.popular_theme_ids'] = array(
+);

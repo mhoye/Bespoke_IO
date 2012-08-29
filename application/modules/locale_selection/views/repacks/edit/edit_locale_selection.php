@@ -1,0 +1,101 @@
+<?php
+$locales = form::value('locales');
+if (empty($locales)) $locales = array();
+?>
+
+<?php slot::start('head_end') ?>
+    <?=html::stylesheet(array('application/modules/locale_selection/public/css/locale_selection.css'))?>
+<?php slot::end() ?>
+
+<?php slot::start('body_end') ?>
+    <?=html::script(array(
+        'application/modules/locale_selection/public/js/locale_selection.js',
+    ))?>
+    <script type="text/javascript">
+        <?php
+            $locale_names = array();
+            $locales_by_name = array();
+            foreach (locale_selection::get_all_locales() as $code=>$details) {
+                $locale_names[] = $details['English'];
+                $locales_by_name[$details['English']] = $code;
+            }
+        ?>
+        BYOB_Repacks_Edit_LocaleSelection.loadLocales(
+            <?= json_encode($locale_names) ?>, 
+            <?= json_encode($locales_by_name) ?> 
+        );
+    </script>
+<?php slot::end() ?>
+
+<div class="intro">
+    <p><?=sprintf(_('Bespoke I/O\'s customized version of Mozilla Firefox is currently available in %1$s locales. You can choose <strong>up to ten locales</strong> for your browser. The first one will be the default locale for your Firefox.'), locale_selection::count())?></p>
+</div>
+<div class="pane">
+    <fieldset>
+        <div>
+            <?php
+                $repackLocale = form::value('localeLocked');
+                if (empty($repackLocale)) $repackLocale = array();
+            ?>
+            <ul class="lock_pref">
+                <?php foreach (Repack_Model::$lockablePrefs as $name=>$label): ?>
+                    <?php if ($name == 'locales'): ?>
+                        <li>
+                        <?= form::checkbox('localeLocked[]', $name, in_array($name, $repackLocale))?> 
+                        <?=_('<acronym title="End users will not be able to change this preference once the browser is deployed">Lock the locales chosen in the browser</acronym>')?>
+                        </li>
+                    <?php endif ?>
+                <?php endforeach ?>
+            </ul>
+        </div> 
+    </fieldset>
+
+    <div class="selections">
+        <fieldset><legend><?=_('Selected locales:')?></legend>
+            <ol class="locale-selections clearfix">
+                <?php foreach ($locales as $locale): ?>
+                    <?php
+                        $details = locale_selection::get_locale_details($locale);
+                        if (empty($details)) continue;
+                    ?>
+                    <li class="selected-locale">
+                        <span class="name"><?= html::specialchars($details['English']) ?></span>
+                        <?= form::hidden("locales[]", $locale) ?>
+                        <a href="#" class="remove"><?=_('Remove')?></a>
+                    </li>
+                <?php endforeach ?>
+                <li class="template selected-locale">
+                    <span class="name"></span>
+                    <input type="hidden" value="" name="locales[]" />
+                    <a href="#" class="remove"><?=_('Remove')?></a>
+                </li>
+            </ol>
+        </fieldset>
+    </div>
+
+    <div class="choices">
+
+        <fieldset><legend><?=_('Choose from these common locales:')?></legend>
+            <?php $popular_choices = locale_selection::get_popular_locales(); ?>
+            <ul class="repack-locale popular-locales clearfix">
+                <?php foreach ($popular_choices as $locale=>$details): ?>
+                    <li>
+                        <?= form::checkbox(array('id'=>'popular_locales_'.$locale, 'name'=>"popular_locales[]"), $locale, in_array($locale, $locales)) ?>
+                        <label class="label" for="popular_locales_<?=html::specialchars($locale)?>"><?= html::specialchars($details['English']) ?></label>
+                    </li>
+                <?php endforeach ?>
+            </ul>
+        </fieldset>
+
+        <fieldset><legend><?=_('Or search for a locale by name:')?></legend>
+            <div class="locale-search-field">
+                <input type="text" id="locale_search" name="locale_search" size="40"
+                title="<?=_('Enter all or part of a locale\'s name')?>" />
+                <span class="button blue add"><?=_('Add')?></span>
+            </div>
+        </fieldset>
+
+        
+    </div>
+
+</div>

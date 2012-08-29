@@ -1,0 +1,53 @@
+.ctrl_thunderbird_repacks #content .main_previews { 
+    padding: 0.25em 0 20px 15px;
+}
+.ctrl_thunderbird_repacks #content .inprogress .main_previews { 
+    padding-left: 105px;
+}
+.ctrl_thunderbird_repacks #content .main_previews h4 {
+    display: inline;
+}
+.ctrl_thunderbird_repacks #content .main_previews .previews {
+    display: inline;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+.ctrl_thunderbird_repacks #content .main_previews .previews li {
+    display: inline;
+    padding: 0 0 0 0.5em;
+}
+.ctrl_thunderbird_repacks #content .main_previews .previews li:before {
+    color: #333;
+    content: "\2219"; 
+    font-size: 130%;
+    padding: 0 0.5em 0 0;
+}
+.ctrl_thunderbird_repacks #content .main_previews .previews li.first:before {
+    content: "";
+    padding: 0 0 0 0;
+}
+.ctrl_thunderbird_repacks #content .confirm .details {
+    padding-bottom: 1em;
+}
+.ctrl_thunderbird_repacks #content .confirm fieldset legend {
+    font-size: 130%;
+}
+.ctrl_thunderbird_repacks #content .confirm .preamble {
+    background: #fff;
+    font-family: serif;
+    font-size: 115%;
+    border: 1px solid #ccc;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0.5em 0 0.5em 0;
+}
+.ctrl_thunderbird_repacks #content .confirm .preamble h3 {
+    padding: 0.5em 0 0.25em 0;
+    font-family: helvetica, arial;
+}
+.ctrl_thunderbird_repacks #content .confirm .preamble li {
+    line-height: 1.5em;
+    list-style: disc;
+    margin-left: 2em;
+}
+
