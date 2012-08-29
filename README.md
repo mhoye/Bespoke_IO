@@ -96,9 +96,9 @@ Specifically, installation on a Fedora box goes as follows:
 
 4.  Install the editor of your choice, emacs, vim or nano.
 
-5.  If you installed nano in step four, hang your head, for you have brought 
-    shame to your family and dishonor to your clan. Sack up and learn one
-    of the other two. 
+5.  If you installed nano in step four, hang your head; you have brought 
+    shame to your family and dishonor to your clan. Sack up, put your unix
+    boots on and learn one of the other two. 
 
 6.  git clone http://github.com/mhoye/Bespoke_IO/
   
@@ -108,15 +108,24 @@ Specifically, installation on a Fedora box goes as follows:
     a curtailed list of the available versions of Firefox and Thunderbird,
     the most current mainline and extended support versions of each.
 
-8.  Move the entire contents of the newly created Bespoke_IO folder to the 
-    root folder of your web server, usually /var/www/html/ - if you 
-    intend to pull directly from the git repo into production, make
+8.  Again in the Bespoke_IO folder execute the following script:
+
+      ./bin/setup_script.sh
+
+    This will set some paths and permissions appropriately. It also 
+    installs some RPMs, so if you're not using Fedora or some other 
+    RPM-based distribution, you'll need to identify which packages 
+    are on that list, and how to obtain and install them yourself.
+
+9.  Move the entire contents of the newly created Bespoke_IO folder 
+    to root folder of your web server, usually /var/www/html/ - if 
+    you intend to pull directly from the git repo into production, make
     sure to copy over the .git folder as well. Future releases will
     have alternative branches for development and production, but at
     the moment they do not so this approach is not recommended. 
 
-    You will need to configure PHP (in /etc/php.ini) to use short tags
-    and set the time zone correctly. 
+10. Outside of Bespoke I/O's code, you will need to configure PHP 
+    (in /etc/php.ini) to use short tags and set the time zone correctly. 
 
     You will need to modify your Apache configuration (httpd.conf) to
     "AllowOverride All" in the appropriate place. Be advised that the
@@ -127,7 +136,7 @@ Specifically, installation on a Fedora box goes as follows:
     Again, the consequences of not knowing what you're doing here are
     your responsibility.
 
-9.  In in applications/config, copy the config-local.php-dist file
+11. In in applications/config, copy the config-local.php-dist file
     to config-local.php and open it up in the editor you picked that
     wasn't nano. You will need to change the line that references the
     core.site_domain (line 3) to be whatever you have named the box,
@@ -136,9 +145,11 @@ Specifically, installation on a Fedora box goes as follows:
     TRUE, you also need to configure the email.options section 
     correctly.
 
-10. Finally, in the root folder of your web server, in a terminal, do this: 
+12. Finally, in the root folder of your web server, in a terminal, do this: 
 
-      php index.php util/createlogin admin person@company.com admin
+       php index.php util/createlogin admin person@companyname.com admin
+
+    ... replacing person@companyname.com with your own address. 
 
     This will create an "admin" user on the web service, with the 
     appropriate permissions, and give you that account's password. You

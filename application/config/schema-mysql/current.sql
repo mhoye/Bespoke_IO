@@ -175,15 +175,10 @@ LOCK TABLES `products` WRITE;
 
 INSERT INTO `products` VALUES 
 
-(25, 'Firefox', '4.0', '4.0', 3, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2011-03-22 10:00:00', NULL),
-(26, 'Firefox', '5.0.1', '5.0.1', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu',0, '2011-07-18 11:00:00', NULL ),
-(30, 'Firefox', '6.0.2', '6.0.2', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2011-08-17 00:00:00', NULL), 
-(31, 'Firefox', '7.0.1', '7.0.1', 3, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2011-03-22 10:00:00', NULL),
-(32, 'Firefox', '8.0.1', '8.0.1', 3, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2011-03-22 10:00:00', NULL),
-(33, 'Firefox', '9.0.1', '9.0.1', 3, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2011-03-22 10:00:00', NULL),
-(34, 'Firefox', '10.0.3', '10.0.3', 3, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2012-02-01 10:00:00', NULL),
-(35, 'Firefox', '10.0.3esr', '10.0.3esr', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2012-03-01 10:00:00', NULL),
-(36, 'Firefox', '11.0', '11.0', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2012-03-01 10:00:00', NULL);
+(1, 'Firefox', '4.0.1', '4.0.1', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2011-03-22 10:00:00', NULL),
+(2, 'Firefox', '10.0.7esr', '10.0.7esr', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2012-03-01 10:00:00', NULL),
+(3, 'Firefox', '15.0', '15.0', 1, 'af ak ar ast be bg bn-BD bn-IN br bs ca cs cy da de el en-GB en-US en-ZA eo es-AR es-CL es-ES es-MX et eu fa fi fr fy-NL ga-IE gd gl gu-IN he hi-IN hr hu hy-AM id is it ja kk kn ko ku lg lt lv mai mk ml mr nb-NO nl nn-NO nso or pa-IN pl pt-BR pt-PT rm ro ru si sk sl son sq sr sv-SE ta-LK ta te th tr uk vi zh-CN zh-TW zu', 0, '2012-03-01 10:00:00', NULL);
+
 
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -309,12 +304,14 @@ CREATE TABLE `thunderbird_products` (
 SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `thunderbird_products` WRITE;
-INSERT INTO `thunderbird_products` VALUES (1, 'Thunderbird', '10.0.3', '10.0.3', 1, 'ar be bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm ru si sk sl sq sv-SE ta-LK tr uk vi zh-CN zh-TW', 0, '2012-02-01 00:00:00', '2012-02-01 00:00:00'),
-(2, 'Thunderbird', '10.0.3esr', '10.0.3esr', 1, 'ar be bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm ru si sk sl sq sv-SE ta-LK tr uk vi zh-CN zh-TW', 0, '2012-02-01 00:00:00', '2012-02-01 00:00:00'),
-(3, 'Thunderbird', '11.0', '11.0', 1, 'ar be bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm ru si sk sl sq sv-SE ta-LK tr uk vi zh-CN zh-TW', 0, '2012-02-01 00:00:00', '2012-02-01 00:00:00');
+INSERT INTO `thunderbird_products` VALUES 
+
+(1, 'Thunderbird', '10.0.1', '10.0.1', 1, 'ar be bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm ru si sk sl sq sv-SE ta-LK tr uk vi zh-CN zh-TW', 0, '2012-02-01 00:00:00', '2012-02-01 00:00:00'),
+(2, 'Thunderbird', '10.0.7esr', '10.0.7esr', 1, 'ar be bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm ru si sk sl sq sv-SE ta-LK tr uk vi zh-CN zh-TW', 0, '2012-02-01 00:00:00', '2012-02-01 00:00:00'),
+(3, 'Thunderbird', '15.0', '15.0', 1, 'ar be bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm ru si sk sl sq sv-SE ta-LK tr uk vi zh-CN zh-TW', 0, '2012-02-01 00:00:00', '2012-02-01 00:00:00');
+
 
 UNLOCK TABLES;
-
 
 --
 -- Table structure for table `thunderbird_repacks`
