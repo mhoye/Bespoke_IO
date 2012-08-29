@@ -1,4 +1,4 @@
-From: info@bespokeio.com 
+From: service@somecompany
 Subject: New Password Request from BeSDS.
 
 Someone has requested a reset of the password for the BeSDS login (registered to 
