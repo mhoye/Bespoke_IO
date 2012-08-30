@@ -20,11 +20,8 @@ ongoing, but the application will generate customized .MSIs as described.
 
 BeSDS is a Firefox & Thunderbird customization and deployment tool, derived
 from Mozilla's BYOB project. It is a fairly complex, multistack application,
-with a number of moving parts. Again, the easiest way to take advantage of
-BeSDS is through the included Virtualbox VM running Fedora.
-
-If you elect to install it on its own machine, the following information
-will guide you through a typical installation on a Fedora machine.
+with a number of moving parts. The following information will guide you 
+through a typical installation on a Fedora 16-based machine.
 
 ## Installation
 
