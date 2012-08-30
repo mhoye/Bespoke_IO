@@ -105,9 +105,9 @@ Specifically, installation on a Fedora box goes as follows:
 
 6.  git clone http://github.com/mhoye/Bespoke_IO/
   
-7.  In Bespoke_IO/application/config/mysql-schema/ you can use the quicksetup
-    script to quickly install a database called besds and a user called
-    besds_admin with the appropriate permissions. This will also install
+7.  In Bespoke_IO/application/config/mysql-schema/ you can use a script
+    called database_setup.sh to quickly install and preconfigure the 
+    the appropriate user and  permissions. This will also install
     a curtailed list of the available versions of Firefox and Thunderbird,
     the most current mainline and extended support versions of each.
 
